@@ -5,7 +5,7 @@
 </head>
 <body>
 <link href="style.css" rel="stylesheet" type="text/css"></link>
-<center><b>ATM எழுத்துரு முன்தோற்றம்</b><br/><br/><br/>
+<center><b>ATM எழுத்துரு முன்தோற்றம்</b><br/><small>(Best view in Chrome)</small><br/><br/>
 <a href="#" class="previous">&laquo; Previous</a>
 <a href="#" class="next">Next &raquo;</a>
   <div id=preview></div>
@@ -33,12 +33,13 @@ for(var i=100;i<809;i++){preview.push(i);preview.push(i+"_Italic"); }
 
  for(var i=0;i<size;i++)
  {var j =parseInt(i)+parseInt(start);
+  if(preview[j])
    content+="<br/><span style='font-family:ATM_"+preview[j]+";font-size:35px'>"+message+"</span><a href='fonts/ATM "+preview[j]+".ttf'>(ATM "+preview[j]+"⇓)</a>";
  } 
   document.getElementById("preview").innerHTML=content;//preview.splice(start,size).join("");
   var n =parseInt(start)+parseInt(size);
   var p =parseInt(start)-parseInt(size);
-  if(n<=808){document.getElementsByClassName("next")[0].setAttribute("href", "./?index="+n);
+  if(n<=1616){document.getElementsByClassName("next")[0].setAttribute("href", "./?index="+n);
             document.getElementsByClassName("next")[1].setAttribute("href", "./?index="+n);}
   if(p>-1){document.getElementsByClassName("previous")[0].setAttribute("href", "./?index="+p);
           document.getElementsByClassName("previous")[1].setAttribute("href", "./?index="+p);}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+</head>
+<body>
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>language</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Language</th>
+            </tr>
+        </tfoot>
+    </table>
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script>    
+    $(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax":"website.json"
+    } );
+    $("div.toolbar").html('<b>Tamil Web directory</b>');
+} );
+  </script>
+</body>
+</html>
