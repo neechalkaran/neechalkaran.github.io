@@ -12,3 +12,5 @@ Collections of Tamil Fonts
 (க.நாகராஜன்)
 பாரதி புத்தகாலயத்திற்காக..
 https://freetamilfonts.com
+-----------------------------
+For Font previews, check http://oss.neechalkaran.com/tamilfonts/ in chrome browser
