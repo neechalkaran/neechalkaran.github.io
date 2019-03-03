@@ -5,16 +5,19 @@
 </head>
 <body>
 <link href="style.css" rel="stylesheet" type="text/css"></link>
-<center><b>ATM எழுத்துரு முன்தோற்றம்</b></center><br/>
+<center><b>ATM எழுத்துரு முன்தோற்றம்</b><br/><br/><br/>
 <a href="#" class="previous">&laquo; Previous</a>
 <a href="#" class="next">Next &raquo;</a>
   <div id=preview></div>
  <a href="#" class="previous">&laquo; Previous</a>
-<a href="#" class="next">Next &raquo;</a>
-  
+<a href="#" class="next">Next &raquo;</a></center>
+  <br/><br/>
+<footer class="Site-footer"><div class="Footer"><span class="Footer-formats">
+<a class="u-monospace Footer-formatsItem" href="https://github.com/neechalkaran/neechalkaran.github.io/tamilfonts">Source at Github</a>
+</span></div></footer>  
 <script type="text/javascript">
   var start=0;
-  var size=50;
+  var size=25;
 var message="யானை காதில் அவர் கிளி பேசியது.!?";
   //var url_string = "http://www.example.com/t.html?a=1&b=3&c=m2-m3-m4-m5"; //window.location.href
 var url = new URL(location.href);
@@ -23,15 +26,16 @@ var d = url.searchParams.get("index");
 if(c)size=c;
   if(d)start=d;
   var preview=[];
-for(var i=1;i<10;i++)
-{preview.push("<br/><span style='font-family:ATM_00"+i+";font-size:35px'>"+message+"</span>(ATM_00"+i+")<br/><span style='font-family:ATM_00"+i+"_Italic;font-size:35px'>"+message+"</span>(ATM_00"+i+"_Italic)");
-}
-for(var i=10;i<100;i++)
-{preview.push("<br/><span style='font-family:ATM_0"+i+";font-size:35px'>"+message+"</span>(ATM_0"+i+")<br/><span style='font-family:ATM_0"+i+"_Italic;font-size:35px'>"+message+"</span>(ATM_0"+i+"_Italic)");}
-for(var i=100;i<809;i++)
-{preview.push("<br/><span style='font-family:ATM_"+i+";font-size:35px'>"+message+"</span>(ATM_"+i+")<br/><span style='font-family:ATM_"+i+"_Italic;font-size:35px'>"+message+"</span>(ATM_"+i+"_Italic)");}
-  
-  document.getElementById("preview").innerHTML=preview.splice(start,size).join("");
+for(var i=1;i<10;i++){preview.push("ATM_00"+i);preview.push("ATM_00"+i+"_Italic");}
+for(var i=10;i<100;i++){preview.push("ATM_0"+i);preview.push("ATM_0"+i+"_Italic");}              
+for(var i=100;i<809;i++){preview.push("ATM_"+i);preview.push("ATM_"+i+"_Italic"); }              
+  var content="";
+
+ for(var i=0;i<size;i++)
+ {var j =parseInt(i)+parseInt(start);
+   content+="<br/><span style='font-family:"+preview[j]+";font-size:35px'>"+message+"</span><a href='../blob/master/tamilfont/fonts/"+preview[j]+"?raw=true'>("+preview[j]+"⇓)</a>";
+ } 
+  document.getElementById("preview").innerHTML=content;//preview.splice(start,size).join("");
   var n =parseInt(start)+parseInt(size);
   var p =parseInt(start)-parseInt(size);
   if(n<=808){document.getElementsByClassName("next")[0].setAttribute("href", "./?index="+n);
@@ -59,6 +63,14 @@ a:hover {
 .next {
   background-color: #4CAF50;
   color: white;
+}
+    
+    .Site-footer{background:#eee;-ms-flex:none;flex:none}
+    .Footer-formats {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
   </style>
 </body>
