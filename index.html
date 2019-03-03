@@ -1,18 +1,65 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <head>
 </head>
 <body>
 <link href="style.css" rel="stylesheet" type="text/css"></link>
-<center><b>எழுத்துரு முன்தோற்றம்</b></center><br/>
+<center><b>ATM எழுத்துரு முன்தோற்றம்</b></center><br/>
+<a href="#" class="previous">&laquo; Previous</a>
+<a href="#" class="next">Next &raquo;</a>
+  <div id=preview></div>
+ <a href="#" class="previous">&laquo; Previous</a>
+<a href="#" class="next">Next &raquo;</a>
+  
 <script type="text/javascript">
+  var start=0;
+  var size=50;
 var message="யானை காதில் அவர் கிளி பேசியது.!?";
+  //var url_string = "http://www.example.com/t.html?a=1&b=3&c=m2-m3-m4-m5"; //window.location.href
+var url = new URL(location.href);
+var c = url.searchParams.get("size");
+var d = url.searchParams.get("index");
+if(c)size=c;
+  if(d)start=d;
+  var preview=[];
 for(var i=1;i<10;i++)
-{document.body.innerHTML=document.body.innerHTML+"<br/><span style='font-family:ATM_00"+i+";font-size:35px'>"+message+"</span>(ATM_00"+i+")"}
+{preview.push("<br/><span style='font-family:ATM_00"+i+";font-size:35px'>"+message+"</span>(ATM_00"+i+")<br/><span style='font-family:ATM_00"+i+"_Italic;font-size:35px'>"+message+"</span>(ATM_00"+i+"_Italic)");
+}
 for(var i=10;i<100;i++)
-{document.body.innerHTML=document.body.innerHTML+"<br/><span style='font-family:ATM_0"+i+";font-size:35px'>"+message+"</span>(ATM_0"+i+")"}
+{preview.push("<br/><span style='font-family:ATM_0"+i+";font-size:35px'>"+message+"</span>(ATM_0"+i+")<br/><span style='font-family:ATM_0"+i+"_Italic;font-size:35px'>"+message+"</span>(ATM_0"+i+"_Italic)");}
 for(var i=100;i<809;i++)
-{document.body.innerHTML=document.body.innerHTML+"<br/><span style='font-family:ATM_"+i+";font-size:35px'>"+message+"</span>(ATM_"+i+")"}
+{preview.push("<br/><span style='font-family:ATM_"+i+";font-size:35px'>"+message+"</span>(ATM_"+i+")<br/><span style='font-family:ATM_"+i+"_Italic;font-size:35px'>"+message+"</span>(ATM_"+i+"_Italic)");}
+  
+  document.getElementById("preview").innerHTML=preview.splice(start,size).join("");
+  var n =parseInt(start)+parseInt(size);
+  var p =parseInt(start)-parseInt(size);
+  if(n<=808){document.getElementsByClassName("next")[0].setAttribute("href", "./?index="+n);
+            document.getElementsByClassName("next")[1].setAttribute("href", "./?index="+n);}
+  if(p>-1){document.getElementsByClassName("previous")[0].setAttribute("href", "./?index="+p);
+          document.getElementsByClassName("previous")[1].setAttribute("href", "./?index="+p);}
 </script>
+  <style>
+    a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+  </style>
 </body>
 </html>
