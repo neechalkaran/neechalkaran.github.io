@@ -15,16 +15,17 @@
     <meta name="twitter:url" content="http://oss.neechalkaran.com/tamilfonts/">
     <meta name="twitter:card" content="summary">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.js"></script>
   <!--Developed  by neechalkaran@gmail.com-->
 </head>
 <body>
 <link href="style.css" rel="stylesheet" type="text/css"></link>
-<center><b>தமிழ் எழுத்துருக்களின் முன்தோற்றம்</b><br/><small>(Best view in Chrome)</small><br/><br/>
-<a href="#" style="display: none;" class="previous">&laquo; Previous</a>
-<a href="#" style="display: none;" class="next">Next &raquo;</a>
-  <div id=preview></div>
- <a href="#" style="display: none;" class="previous">&laquo; Previous</a>
-<a href="#" style="display: none;" class="next">Next &raquo;</a></center>
+<center><b><a href="./">தமிழ் எழுத்துருக்களின் முன்தோற்றம்</a></b><br/><small>(Best view in Chrome)</small></center><br/><br/>
+<div class="flip"><a href="#" style="display: none;" class="previous">&laquo; Previous</a>
+  <a href="#" style="display: none;" class="next">Next &raquo;</a></div>
+  <div class="flip" id=preview></div>
+<div class="flip"><a href="#" style="display: none;" class="previous">&laquo; Previous</a>
+<a href="#" style="display: none;" class="next">Next &raquo;</a></div>
   <br/><br/>
 <footer class="Site-footer"><div class="Footer"><span class="Footer-formats">
 <a class="u-monospace Footer-formatsItem" href="https://github.com/neechalkaran/neechalkaran.github.io/tree/master/tamilfonts">More fonts & Licence at Github</a>
@@ -32,7 +33,7 @@
 <script type="text/javascript">
   
 var preview=[];  
- $(function(){
+ $(function(){  
     $.get( "./fonts.txt", function( data ) {
       preview = data.split(","); 
       update();
@@ -57,9 +58,10 @@ if(e)fname=e;
   if(start<0){start=0;}
   var content="";
    if(fname!="")
-   {for(var j=0;j<limit;j++)if(preview[j].search(fname)>-1)
-    content+="<br/><span style='font-family:F"+j+";font-size:35px'>"+message+"</span><a href='"+preview[j]+"'>("+preview[j].split("/")[1].split(".ttf")[0]+"⇓)</a>"; 
-   
+   {
+    var matter ="<table lang=\"ta\" style=\"text-align: center\"><tbody><tr><th>ஃ</th><th>அ</th><th>ஆ</th><th>இ</th><th>ஈ</th><th>உ</th><th>ஊ</th><th>எ</th><th>ஏ</th><th>ஐ</th><th>ஒ</th><th>ஓ</th><th>ஔ</th></tr><tr><th>க்</th><td>க</td><td>கா</td><td>கி</td><td>கீ</td><td>கு</td><td>கூ</td><td>கெ</td><td>கே</td><td>கை</td><td>கொ</td><td>கோ</td><td>கௌ</td></tr><tr><th>ங்</th><td>ங</td><td>ஙா</td><td>ஙி</td><td>ஙீ</td><td>ஙு</td><td>ஙூ</td><td>ஙெ</td><td>ஙே</td><td>ஙை</td><td>ஙொ</td><td>ஙோ</td><td>ஙௌ</td></tr><tr><th>ச்</th><td>ச</td><td>சா</td><td>சி</td><td>சீ</td><td>சு</td><td>சூ</td><td>செ</td><td>சே</td><td>சை</td><td>சொ</td><td>சோ</td><td>சௌ</td></tr><tr><th>ஞ்</th><td>ஞ</td><td>ஞா</td><td>ஞி</td><td>ஞீ</td><td>ஞு</td><td>ஞூ</td><td>ஞெ</td><td>ஞே</td><td>ஞை</td><td>ஞொ</td><td>ஞோ</td><td>ஞௌ</td></tr><tr><th>ட்</th><td>ட</td><td>டா</td><td>டி</td><td>டீ</td><td>டு</td><td>டூ</td><td>டெ</td><td>டே</td><td>டை</td><td>டொ</td><td>டோ</td><td>டௌ</td></tr><tr><th>ண்</th><td>ண</td><td>ணா</td><td>ணி</td><td>ணீ</td><td>ணு</td><td>ணூ</td><td>ணெ</td><td>ணே</td><td>ணை</td><td>ணொ</td><td>ணோ</td><td>ணௌ</td></tr><tr><th>த்</th><td>த</td><td>தா</td><td>தி</td><td>தீ</td><td>து</td><td>தூ</td><td>தெ</td><td>தே</td><td>தை</td><td>தொ</td><td>தோ</td><td>தௌ</td></tr><tr><th>ந்</th><td>ந</td><td>நா</td><td>நி</td><td>நீ</td><td>நு</td><td>நூ</td><td>நெ</td><td>நே</td><td>நை</td><td>நொ</td><td>நோ</td><td>நௌ</td></tr><tr><th>ப்</th><td>ப</td><td>பா</td><td>பி</td><td>பீ</td><td>பு</td><td>பூ</td><td>பெ</td><td>பே</td><td>பை</td><td>பொ</td><td>போ</td><td>பௌ</td></tr><tr><th>ம்</th><td>ம</td><td>மா</td><td>மி</td><td>மீ</td><td>மு</td><td>மூ</td><td>மெ</td><td>மே</td><td>மை</td><td>மொ</td><td>மோ</td><td>மௌ</td></tr><tr><th>ய்</th><td>ய</td><td>யா</td><td>யி</td><td>யீ</td><td>யு</td><td>யூ</td><td>யெ</td><td>யே</td><td>யை</td><td>யொ</td><td>யோ</td><td>யௌ</td></tr><tr><th>ர்</th><td>ர</td><td>ரா</td><td>ரி</td><td>ரீ</td><td>ரு</td><td>ரூ</td><td>ரெ</td><td>ரே</td><td>ரை</td><td>ரொ</td><td>ரோ</td><td>ரௌ</td></tr><tr><th>ல்</th><td>ல</td><td>லா</td><td>லி</td><td>லீ</td><td>லு</td><td>லூ</td><td>லெ</td><td>லே</td><td>லை</td><td>லொ</td><td>லோ</td><td>லௌ</td></tr><tr><th>வ்</th><td>வ</td><td>வா</td><td>வி</td><td>வீ</td><td>வு</td><td>வூ</td><td>வெ</td><td>வே</td><td>வை</td><td>வொ</td><td>வோ</td><td>வௌ</td></tr><tr><th>ழ்</th><td>ழ</td><td>ழா</td><td>ழி</td><td>ழீ</td><td>ழு</td><td>ழூ</td><td>ழெ</td><td>ழே</td><td>ழை</td><td>ழொ</td><td>ழோ</td><td>ழௌ</td></tr><tr><th>ள்</th><td>ள</td><td>ளா</td><td>ளி</td><td>ளீ</td><td>ளு</td><td>ளூ</td><td>ளெ</td><td>ளே</td><td>ளை</td><td>ளொ</td><td>ளோ</td><td>ளௌ</td></tr><tr><th>ற்</th><td>ற</td><td>றா</td><td>றி</td><td>றீ</td><td>று</td><td>றூ</td><td>றெ</td><td>றே</td><td>றை</td><td>றொ</td><td>றோ</td><td>றௌ</td></tr><tr><th>ன்</th><td>ன</td><td>னா</td><td>னி</td><td>னீ</td><td>னு</td><td>னூ</td><td>னெ</td><td>னே</td><td>னை</td><td>னொ</td><td>னோ</td><td>னௌ</td></tr></tbody></table>";
+     for(var j=0;j<limit;j++)if(preview[j].search(fname)>-1)
+    content+="<br/><a href='"+preview[j]+"'>Download "+preview[j].split("/")[1].split(".ttf")[0]+"</a><br/><span align='center' style='font-family:F"+j+";font-size:25px'>"+matter+"</span>"; 
     $(".previous").hide();
     $(".next").hide();
    }
@@ -67,7 +69,9 @@ if(e)fname=e;
        for(var i=0;i<size;i++)
        {var j =parseInt(i)+parseInt(start);
        if(preview[j])
-       content+="<br/><span style='font-family:F"+j+";font-size:35px'>"+message+"</span><a href='"+preview[j]+"'>("+preview[j].split("/")[1].split(".ttf")[0]+"⇓)</a>";
+       {var name =preview[j].split("/")[1].split(".ttf")[0];
+       content+="<br/><span style='font-family:F"+j+";font-size:35px'>"+message+"</span><a href='?preview="+name+"'>detail</a><a href='"+preview[j]+"'>("+name+"⇓)</a>";
+       }
        }
   var n =parseInt(start)+parseInt(size);
   var p =parseInt(start)-parseInt(size);
@@ -79,8 +83,12 @@ if(e)fname=e;
     $(".next").show();
   }
 else{
-  content+="Search";
-  
+   $.get( "./README.md", function( data ) {
+var converter = new showdown.Converter();
+ $("#preview").html(converter.makeHtml(data));
+     $("#preview").removeClass("flip");
+    });
+  content="";
 }
    document.getElementById("preview").innerHTML=content;//preview.splice(start,size).join("");
           } 
@@ -106,6 +114,7 @@ a:hover {
   background-color: #4CAF50;
   color: white;
 }
+    .flip{text-align: center;}    
     
     .Site-footer{background:#eee;-ms-flex:none;flex:none}
     .Footer-formats {
