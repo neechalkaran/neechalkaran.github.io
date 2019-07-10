@@ -14,51 +14,76 @@
     <meta name="twitter:title" content="Open Source Tamil Fonts">
     <meta name="twitter:url" content="http://oss.neechalkaran.com/tamilfonts/">
     <meta name="twitter:card" content="summary">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!--Developed  by neechalkaran@gmail.com-->
 </head>
 <body>
 <link href="style.css" rel="stylesheet" type="text/css"></link>
-<center><b>ATM எழுத்துரு முன்தோற்றம்</b><br/><small>(Best view in Chrome)</small><br/><br/>
-<a href="#" class="previous">&laquo; Previous</a>
-<a href="#" class="next">Next &raquo;</a>
+<center><b>தமிழ் எழுத்துருக்களின் முன்தோற்றம்</b><br/><small>(Best view in Chrome)</small><br/><br/>
+<a href="#" style="display: none;" class="previous">&laquo; Previous</a>
+<a href="#" style="display: none;" class="next">Next &raquo;</a>
   <div id=preview></div>
- <a href="#" class="previous">&laquo; Previous</a>
-<a href="#" class="next">Next &raquo;</a></center>
+ <a href="#" style="display: none;" class="previous">&laquo; Previous</a>
+<a href="#" style="display: none;" class="next">Next &raquo;</a></center>
   <br/><br/>
 <footer class="Site-footer"><div class="Footer"><span class="Footer-formats">
 <a class="u-monospace Footer-formatsItem" href="https://github.com/neechalkaran/neechalkaran.github.io/tree/master/tamilfonts">More fonts & Licence at Github</a>
 </span></div></footer>  
 <script type="text/javascript">
-  var start=0;
+  
+var preview=[];  
+ $(function(){
+    $.get( "./fonts.txt", function( data ) {
+      preview = data.split(","); 
+      update();
+    });
+});
+  function update()
+  {
+  var start=-1;
   var size=25;
-  var limit=1616;
+  var limit=preview.length;
+  var fname="";
 var message="யானையின் காதில் தமிழ் பேசியது கிளி.!?";
   //var url_string = "http://www.example.com/t.html?a=1&b=3&c=m2-m3-m4-m5"; //window.location.href
 var url = new URL(location.href);
 var c = url.searchParams.get("size");
 var d = url.searchParams.get("index");
+var e = url.searchParams.get("preview");    
 if(c)size=c;
 if(d)start=d;
+if(e)fname=e;
   if(start>limit){start=limit-size;}
   if(start<0){start=0;}
-  var preview=[];
-for(var i=1;i<10;i++){preview.push("00"+i);preview.push("00"+i+"_Italic");}
-for(var i=10;i<100;i++){preview.push("0"+i);preview.push("0"+i+"_Italic");}              
-for(var i=100;i<809;i++){preview.push(i);preview.push(i+"_Italic"); }              
   var content="";
-
- for(var i=0;i<size;i++)
- {var j =parseInt(i)+parseInt(start);
-  if(preview[j])
-   content+="<br/><span style='font-family:ATM_"+preview[j]+";font-size:35px'>"+message+"</span><a href='fonts/ATM "+preview[j]+".ttf'>(ATM "+preview[j]+"⇓)</a>";
- } 
-  document.getElementById("preview").innerHTML=content;//preview.splice(start,size).join("");
+   if(fname!="")
+   {for(var j=0;j<limit;j++)if(preview[j].search(fname)>-1)
+    content+="<br/><span style='font-family:F"+j+";font-size:35px'>"+message+"</span><a href='"+preview[j]+"'>("+preview[j].split("/")[1].split(".ttf")[0]+"⇓)</a>"; 
+   
+    $(".previous").hide();
+    $(".next").hide();
+   }
+  else if(d){
+       for(var i=0;i<size;i++)
+       {var j =parseInt(i)+parseInt(start);
+       if(preview[j])
+       content+="<br/><span style='font-family:F"+j+";font-size:35px'>"+message+"</span><a href='"+preview[j]+"'>("+preview[j].split("/")[1].split(".ttf")[0]+"⇓)</a>";
+       }
   var n =parseInt(start)+parseInt(size);
   var p =parseInt(start)-parseInt(size);
-  if(n<=1616){document.getElementsByClassName("next")[0].setAttribute("href", "./?index="+n);
+  if(n<=preview.length){document.getElementsByClassName("next")[0].setAttribute("href", "./?index="+n);
             document.getElementsByClassName("next")[1].setAttribute("href", "./?index="+n);}
   if(p>-1){document.getElementsByClassName("previous")[0].setAttribute("href", "./?index="+p);
           document.getElementsByClassName("previous")[1].setAttribute("href", "./?index="+p);}
+     $(".previous").show();
+    $(".next").show();
+  }
+else{
+  content+="Search";
+  
+}
+   document.getElementById("preview").innerHTML=content;//preview.splice(start,size).join("");
+          } 
 </script>
   <style>
     a {
