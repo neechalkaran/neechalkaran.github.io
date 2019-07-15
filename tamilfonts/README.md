@@ -24,6 +24,9 @@ Collections of Tamil Fonts
 ## TVA Fonts
 தமிழிணையக் கல்விக்கழகத்தால் வெளியிடப்பட்ட எழுத்துருக்கள். Source(http://www.tamilvu.org/ta/tkbd-index-341488)
 
+## Niram Labs
+தாரிக் அஜீஸ் உருவாக்கிய எழுத்துருக்கள் SIL Open Font License v1.1 உரிமையில் வெளியிடப்படுகிறது.
+
 ## other-fonts
    [Tamizha](https://github.com/thamizha/tamil-fonts/tree/master/fonts-installer/fontfiles) [SALRC](http://salrc.uchicago.edu/resources/fonts/available/tamil/) கிடைத்த இதர எழுத்துருக்கள் இங்கே உள்ளன.
    ஒவ்வொரு எழுத்துருவின் அதன் உரிமையைப் பின்பற்றிக் கொள்ளவும்.

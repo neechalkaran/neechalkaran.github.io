@@ -28,4 +28,4 @@ Open the source sfd from the sfd directory (source/sfd) in FontForge and merge t
 
 Copyright (c) 2015, Tharique Azeez ([link](http://thariqueazeez.com))
 
-Kavivanar Font is licensed under the SIL Open Font License v1.1 (<http://scripts.sil.org/OFL>)
+Fonts are licensed under the SIL Open Font License v1.1 (<http://scripts.sil.org/OFL>)
