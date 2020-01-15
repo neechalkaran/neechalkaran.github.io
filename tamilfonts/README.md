@@ -6,14 +6,14 @@ Collections of Tamil Fonts
    சென்னையில் செயல்பட்டு வரும் பாரதி புத்தகாலயம், சாக்பீஸ் பவுண்டேசனுடன் இணைந்து  மூன்றாண்டு கால உழைப்பில் உருவாக்கிய 800+ (சாய்வு, அழுத்த எழுத்துருக்கள் சேர்த்து 2102) எழுத்துருக்களை ஒருங்குறியில் வடிவமைத்து கடந்த 31/12/2018 அன்று பொதுமக்கள் பயன்படுத்தும் வகையில் இலவச திறமூல மென்பொருளாக வெளியிட்டது. இந்த எழுத்துரு வடிவஙகளை creative Commons என்கிற புரிந்துணர்வோடு யாவரும் அவர்கள் முயல்வைக் குறிபிட்டு விட்டு பயன்படுத்திக் கொள்ளலாம்... இரா..துரைபாண்டி வடிவமைத்த எழுத்துருக்களின் அடிப்படையில் இந்தப் பணியினைச் செய்துள்ளனர்.   (க.நாகராஜன்), பாரதி புத்தகாலயம் [freetamilfonts.com](https://freetamilfonts.com)
 
 ## ila_Sundaram Fonts
-   முனைவர் இல சுந்தரம் அவர்களால் உருவாக்கப்பட்டு SIL Open Font License, Version 1.1. என்ற கட்டற்ற உரிமையில் வழங்கப் படுகிறது.
+   முனைவர் இல சுந்தரம் அவர்களால் உருவாக்கப்பட்டு SIL Open Font License, Version 1.1. என்ற கட்டற்ற உரிமையில் வழங்கப் படுகிறது. [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=ila.Sundaram)
 
 ## uni-Amma Fonts
    விஷுவல்மீடியா நிறுவனத்தின்(செல்வ முரளி) சார்பாக வெளியிடப்பட்டுள்ள எழுத்துருக்கள். 
-[http://visualmediatech.com](http://visualmediatech.com/%E0%AE%AA%E0%AF%81%E0%AE%A4%E0%AE%BF%E0%AE%AF-%E0%AE%AF%E0%AF%81%E0%AE%A9%E0%AE%BF%E0%AE%95%E0%AF%8B%E0%AE%9F%E0%AF%81-%E0%AE%8E%E0%AE%B4%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%B0%E0%AF%81)
+[http://visualmediatech.com](http://visualmediatech.com/%E0%AE%AA%E0%AF%81%E0%AE%A4%E0%AE%BF%E0%AE%AF-%E0%AE%AF%E0%AF%81%E0%AE%A9%E0%AE%BF%E0%AE%95%E0%AF%8B%E0%AE%9F%E0%AF%81-%E0%AE%8E%E0%AE%B4%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%B0%E0%AF%81) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=uniAmma)
 
 ## Sundaram Fonts
-மாட்யுலர் இன்போடெக் நிறுவனத்தால் உருவாக்கப்பட்டுப் பொதுப்பயன்பாட்டிற்கு சிடாக் மூலம் வெளியிடப்பட்ட எழுத்துருக்கள். [source](http://www.ildc.in/Tamil/GIST/htm/modular-otfonts.htm)
+மாட்யுலர் இன்போடெக் நிறுவனத்தால் உருவாக்கப்பட்டுப் பொதுப்பயன்பாட்டிற்கு சிடாக் மூலம் வெளியிடப்பட்ட எழுத்துருக்கள். [source](http://www.ildc.in/Tamil/GIST/htm/modular-otfonts.htm) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=SUNDARAM)
 
 ## CADGRAF Fonts
 கேட்கிராஃப் டிஜிட்டல்ஸ் (சென்னை கவிகள்) நிறுவனத்தால் உருவாக்கப்பட்டுப் பொதுப்பயன்பாட்டிற்கு சிடாக் மூலம் வெளியிடப்பட்ட எழுத்துருக்கள். [source](http://www.ildc.in/Tamil/GIST/htm/cd-ttf.htm)
@@ -27,8 +27,8 @@ Collections of Tamil Fonts
 ## Niram Labs
 தாரிக் அஜீஸ் உருவாக்கிய எழுத்துருக்கள் SIL Open Font License v1.1 உரிமையில் வெளியிடப்படுகிறது.
 
-## Tamilri Chenthil fonts
-தமிழர் ஆய்வுக்கூடம் சார்பாக செந்தில் குமார் வெளியிட்ட எழுத்துருக்கள். [source](https://www.facebook.com/photo.php?fbid=780187126146092&set=a.102926520538826&type=3)
+## Tamilri Chenthil fonts 
+தமிழர் ஆய்வுக்கூடம் சார்பாக செந்தில் குமார் வெளியிட்ட எழுத்துருக்கள். [source](https://www.facebook.com/photo.php?fbid=780187126146092&set=a.102926520538826&type=3) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=Tamilri_Chenetfont)
 
 ## other-fonts
    [Tamizha](https://github.com/thamizha/tamil-fonts/tree/master/fonts-installer/fontfiles) [SALRC](http://salrc.uchicago.edu/resources/fonts/available/tamil/) கிடைத்த இதர எழுத்துருக்கள் இங்கே உள்ளன.
