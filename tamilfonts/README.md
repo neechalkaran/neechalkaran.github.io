@@ -27,6 +27,9 @@ Collections of Tamil Fonts
 ## Niram Labs
 தாரிக் அஜீஸ் உருவாக்கிய எழுத்துருக்கள் SIL Open Font License v1.1 உரிமையில் வெளியிடப்படுகிறது.
 
+## Tamilri Chenthil fonts
+தமிழர் ஆய்வுக்கூடம் சார்பாக செந்தில் குமார் வெளியிட்ட எழுத்துருக்கள். [source](https://www.facebook.com/photo.php?fbid=780187126146092&set=a.102926520538826&type=3)
+
 ## other-fonts
    [Tamizha](https://github.com/thamizha/tamil-fonts/tree/master/fonts-installer/fontfiles) [SALRC](http://salrc.uchicago.edu/resources/fonts/available/tamil/) கிடைத்த இதர எழுத்துருக்கள் இங்கே உள்ளன.
    ஒவ்வொரு எழுத்துருவின் அதன் உரிமையைப் பின்பற்றிக் கொள்ளவும்.
