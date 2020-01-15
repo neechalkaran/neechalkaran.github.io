@@ -19,10 +19,10 @@ Collections of Tamil Fonts
 கேட்கிராஃப் டிஜிட்டல்ஸ் (சென்னை கவிகள்) நிறுவனத்தால் உருவாக்கப்பட்டுப் பொதுப்பயன்பாட்டிற்கு சிடாக் மூலம் வெளியிடப்பட்ட எழுத்துருக்கள். [source](http://www.ildc.in/Tamil/GIST/htm/cd-ttf.htm)
 
 ## CDAC Fonts
-2005 இல் சிடாக் மூலம் வணிகரீதியல்லாமல் பொதுப்பயன்பாட்டிற்கு வழங்கப்பட்ட எழுத்துருக்கள். http://www.ildc.in/Tamil/GIST/htm/otfonts.htm
+2005 இல் சிடாக் மூலம் வணிகரீதியல்லாமல் பொதுப்பயன்பாட்டிற்கு வழங்கப்பட்ட எழுத்துருக்கள். [source](http://www.ildc.in/Tamil/GIST/htm/otfonts.htm)
 
 ## TVA Fonts
-தமிழிணையக் கல்விக்கழகத்தால் வெளியிடப்பட்ட எழுத்துருக்கள். Source(http://www.tamilvu.org/ta/tkbd-index-341488)
+தமிழிணையக் கல்விக்கழகத்தால் வெளியிடப்பட்ட எழுத்துருக்கள். [Source](http://www.tamilvu.org/ta/tkbd-index-341488)
 
 ## Niram Labs
 தாரிக் அஜீஸ் உருவாக்கிய எழுத்துருக்கள் SIL Open Font License v1.1 உரிமையில் வெளியிடப்படுகிறது.
