@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="Collection of Tamil softwares">
+    <meta property="og:site_name" content="Tamil Computing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://oss.neechalkaran.com/tamilcomputing/">
+    <meta name="name" content="Collection of Tamil softwares">
+    <meta name="url" content="http://oss.neechalkaran.com/tamilcomputing/">
+    <meta name="twitter:title" content="Collection of Tamil softwares">
+    <meta name="twitter:url" content="http://oss.neechalkaran.com/tamilcomputing/">
+    <meta name="twitter:card" content="summary">
+</head>
+<body>
+    <!--
+Todo
+anchor tag for urls
+https://datatables.net/examples/advanced_init/dom_toolbar.html
+
+4 type of input data
+-->
+  <center><b>List of Tamil Softwares</b><br/><small></small><br/><br/>
+<span style="width:75%">கணித் தமிழ் முயற்சிகளின் தொகுப்பு. சிலவை நிரலாக இருக்கலாம், தரவிறக்கும் கருவியாக இருக்கலாம் அல்லது இணையச் செயலியாகவும் 
+    இருக்கலாம்.</spam>
+    <br/>
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Tool</th>
+                <th>Type</th>
+                <th>Developer</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Tool</th>
+                <th>Type</th>
+                <th>Developer</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br/><br/><br/><br/><br/><br/>
+<footer class="Site-footer"><div class="Footer">
+  <span class="Footer-formats">
+   <a href="http://www.neechalkaran.com/me" target="_blank">Compiled by Neechalkaran </a> 
+<a class="u-monospace Footer-formatsItem" href="https://github.com/neechalkaran/neechalkaran.github.io/tree/master/tamilcomputing">Suggest here</a>
+</span></div></footer>     
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script>    
+    $(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax":"software.json",
+        "lengthMenu": [ 25, 50, 75, 100 ],
+      //"columnDefs": [ {"targets": 0,"orderable": false} ]
+      "order": [[ 2, 'asc' ]],
+      "language": {"paginate": {"next": "Next page"}},
+      "language": {"paginate": {"previous": "Previous page"}}
+    } );
+      
+    $("div.toolbar").html('<b>Tamil Web directory</b>');
+} );
+  </script>
+    <style>
+          a,span {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer; 
+}
+      
+   .Site-footer{background:#eee;-ms-flex:none;flex:none;
+    bottom: 0;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 30;}
+   .Footer-formats {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+    </style>
+</body>
+</html>
