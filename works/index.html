@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+  <!--Adopted from https://codepen.io/silkine/pen/jldif-->
+</head>
+<body>    
+    
+    <title>நீச்சல்காரன் முயற்சிகள்</title>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+<div class="head">
+    <div class="headerobjectswrapper">
+        <div class="weatherforcastbox"><span style="font-style: italic;">
+Javascript</span><br><span>Php</span></div><br/>
+        <header>நீச்சல்காரன்</header>
+    </div>
+
+    <div class="subhead">நீச்சல்காரன் கணித்தமிழ் முயற்சிகளின் தொகுப்பு</div>
+</div>
+<div class="content">
+    <div class="collumns">
+        <div class="collumn">
+            <div class="head"><span class="headline hl3">ஓவன் - ஒருங்குறி மாற்றி</span><p>
+              <span class="headline hl4"><a href="http://dev.neechalkaran.com/p/oovan.html">http://dev.neechalkaran.com/oovan</a></span></p></div>
+தமிழில் யுனிக்கோட் மற்றும் யுனிக்கோட் அல்லாத நற்பதிற்கும் மேற்பட்ட குறியாக்கங்களை மாற்றித் தரும் செயலி.</p></div>
+    <div class="collumn">
+            <div class="head"><span class="headline hl3">வாணி - பிழை திருத்தி</span><p>
+              <span class="headline hl4"><a href="http://vaani.neechalkaran.com">http://vaani.neechalkaran.com</a></span></p></div>
+      தமிழில் எழுத்துப் பிழை, தட்டுப்பிழை, புணர்ச்சிப் பிழை, சந்திப் பிழை, ஆங்கிலச் சொல் போன்றவற்றைத் தவிர்க்க உதவும் திருத்தி. இணையம் வழியாக, கைப்பேசி, கணினியில் பயன்படுத்தக் கூடியாது. இதன் கைப்பேசி செயலி <a href="http://oss.neechalkaran.com/vaani.apk">இங்கே</a> உள்ளது.
+      </p></div>         
+  <div class="collumn">
+            <div class="head"><span class="headline hl3">சுளகு - எழுத்தாய்வுக் கருவி</span><p>
+              <span class="headline hl4"><a href="http://apps.neechalkaran.com/sulaku">http://apps.neechalkaran.com/sulaku</a></span></p></div>
+            தமிழ் உள்ளடக்கத்தில் உள்ள எழுத்து, சொல், அடிச்சொல் குறித்த ஆய்வுகள் செய்ய உதவும் இணையச் செயலி. இதில் அகரவரிசைப்படுத்தல், சொல் எண்ணிக்கை காட்டல் போன்ற இதர வசதிகளும் உள்ளன.</p>
+  </div>
+  <div class="collumn">
+            <div class="head"><span class="headline hl3">மென்கோலம்- பல்குறியீட்டு எழுதி</span><p>
+              <span class="headline hl4"><a href="http://dev.neechalkaran.com/p/ascii-tamil.html">http://dev.neechalkaran.com/ascii-tamil</a></span></p></div>
+            தமிழில் வனப்பெழுத்துக்கள் கொண்டு எழுத உதவும் கருவி. பல எழுத்துருவைக் கொண்டு ஒரு எழுத்துரு போன்ற பின்பத்தை உருவாக்கும் முறை.</p>
+  </div>
+<div class="collumn">
+            <div class="head"><span class="headline hl3">கோலசுரபி</span><p>
+              <span class="headline hl4"><a href="http://dev.neechalkaran.com/p/kolam.html">http://dev.neechalkaran.com/kolam</a></span></p></div>
+            இணையத்தில் கோலம் வரைய உதவும் செயலி. வளைவு மற்றும் கோடுகள் கொண்டு தான்தோன்றித் தனமான கோலங்களை விரும்பும் புள்ளிகளுக்கேற்ப உருவாக்கிக் கொடுக்கும் இணையச் செயலி.</p>
+  </div>
+<div class="collumn">
+            <div class="head"><span class="headline hl3">ஆடு புலி ஆட்டம்</span><p>
+              <span class="headline hl4"><a href="http://dev.neechalkaran.com/p/aadu-puli.html">http://dev.neechalkaran.com/aadu-puli</a></span></p></div>
+            ஆடு புலி ஆட்டத்தைக் கணினியில் விளையாடும் வசதியை வழங்கும் தளம். மனிதர் மனிதருடனோ கணினி மனிதருடனோ விளையாட முடியும்.</p>
+  </div>
+<div class="collumn">
+            <div class="head"><span class="headline hl3">ஆய்வுப்புள்ளி</span><p>
+              <span class="headline hl4"><a href="http://tree.neechalkaran.com">http://tree.neechalkaran.com</a></span></p></div>
+  தமிழ் சமூகத்தில் விவாதிக்கப்படும் முக்கியத் தலைப்புகளில் விவாதங்களைத் தொகுத்து, ஒரு வழிகாட்டியாகக் காட்டும் ஒரு தொகுப்பு. இதில் சந்தி இலக்கணத்திற்கான ஒரு <a href="http://tree.neechalkaran.com/p/sandhi.html">வழிகாட்டியும் உள்ளது</a>.</p>
+  </div>
+
+<div class="collumn">
+            <div class="head"><span class="headline hl3">விக்கி உருமாற்றி</span><p>
+              <span class="headline hl4"><a href="http://apps.neechalkaran.com/wikiconverter">http://apps.neechalkaran.com/wikiconverter</a></span></p></div>
+            விக்கிப்பீடியாவில் ஒரு மொழிகளிலிருந்து மற்றொரு மொழிக்கு மொழிபெயர்க்கும் போது உள்ளிணைப்புகளை மொழிபெயர்த்துதவும் கருவி. உள்ளிணைப்புகளை மட்டும் மாற்றவோ மொழிபெயர்க்கவோ உதவும் இணையச் செயலி.</p>
+  </div>
+
+
+<div class="collumn">
+            <div class="head"><span class="headline hl3">நோக்கர்</span><p>
+              <span class="headline hl4"><a href="http://apps.neechalkaran.com/nokkar">http://apps.neechalkaran.com/nokkar</a></span></p></div>
+            தமிழ் உள்ளாடக்கங்களில் உள்ள எழுத்துப் பிழை, தட்டுப்பிழை, புணர்ச்சிப் பிழை, சந்திப் பிழை முதலியவற்றை அறிக்கையாகக் கொடுக்கும் இணையச் செயலி.</p>
+  </div>
+
+<div class="collumn">
+            <div class="head"><span class="headline hl3">தமிழ்ச்சரம்</span><p>
+              <span class="headline hl4"><a href="https://tamilcharam.com">https://tamilcharam.com</a></span></p></div>
+ஆரூர் பாஸ்கர் அவர்களுடன் சேர்ந்து உருவாக்கிய தமிழ்ப் பதிவுகளுக்கான வலைப்பதிவுத் திரட்டி. தமிழில் உள்ள வலைப்பதிவுகளின் பதிவுகளைத் தானாகத் திரட்டி, தொகுத்துத் தரும் தளம்.</p>
+  </div>
+
+
+
+ <div class="collumn">
+            <div class="head"><span class="headline hl3">வாணி தொகுப்பகராதி</span><p>
+              <span class="headline hl4"><a href="http://vaani.neechalkaran.com/word">http://vaani.neechalkaran.com/word</a></span></p></div>
+            இதுவொரு சொற்பகுப்புத் திறன் கொண்ட தொகுப்பகராதி. உதாரணம்:"அம்மாவிடம்", "அம்மாவினால்" என்று கொடுத்தாலும் வேர் சொல்லினைப் புரிந்து அம்மா என்ற சொல்லுக்கு விளக்கத்தை பல அகராதிகளிடமிருந்து காட்டும்.</p>
+  </div>
+  <div class="collumn">
+            <div class="head"><span class="headline hl3">நாவி - சந்திப்பிழை திருத்தி</span><p>
+              <span class="headline hl4"><a href="http://dev.neechalkaran.com/p/naavi.html">http://dev.neechalkaran.com/naavi</a></span></p></div>
+            தமிழில் சந்திப் பிழைகளைச் சுட்டிக்காட்டி இலக்கணத்தையும் காட்டும். சந்தி இலக்கணம் கற்றுக் கொள்ளும் மாணவர்களுக்கு உதவும் இணையச் செயலி.</p>
+  </div>
+    <div class="collumn">
+            <div class="head"><span class="headline hl3">கிட்ஹப் புள்ளி</span><p>
+              <span class="headline hl4"><a href="http://oss.neechalkaran.com">http://oss.neechalkaran.com</a></span></p></div>
+            தமிழில் உள்ள மென்பொருட்கள், செயலிகள், எழுத்துருக்கள், இணையத்தளம் மற்றும் கலைச்சொற்கள் என ஒரே இடத்தில் கட்டற்ற முறையில் தொகுக்கும் முயற்சி.</p>
+  </div>
+  
+  
+        <div class="collumn"><div class="head"><span class="headline hl1">மேலும் சில கருவிகள்</span><p>
+          <span class="headline hl2"></span></p></div>
+          மேலும் சில கருவிகளை கீழுள்ள முகவரிகளில் காணலாம்.
+          <a href="http://dev.neechalkaran.com/p/index.html">http://dev.neechalkaran.com</a>
+          <a href="http://apps.neechalkaran.com/">http://apps.neechalkaran.com</a>
+          <a href="https://github.com/neechalkaran">https://github.com/neechalkaran</a>
+          நிகழ்த்திய கருத்துரைகள் http://www.neechalkaran.com/p/blog-page.html
+          </p>
+	<figure class="figure">
+								<img class="media" src="http://i.giphy.com/4fDWVPMoSyhgc.gif" alt="">
+								<figcaption class="figcaption">"This time, let go your conscious self and act on instinct."</figcaption>
+						</figure>
+            
+    </div>
+  
+    </div>
+</div>
+
+  
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script>   
+  </script>
+    <style>
+      @font-face {
+  font-family: 'Playfair Display';
+  font-weight: 200;
+  src: url('files/TMOTKLB_Ship.ttf');  
+}
+       @font-face {
+  font-family: 'pavanam';
+  font-weight: 200;
+  src: url('files/Pavanam-Regular.ttf');  
+}    
+    body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+}
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+
+}
+p{
+    margin-top: 0;
+   font-family: 'pavanam', serif;
+    margin-bottom: 20px;
+}
+      a{text-decoration: none;
+      color: inherit;}      
+.head{
+    text-align: center;
+    position: relative;
+
+
+}
+
+.headerobjectswrapper{
+}
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+
+}
+.weatherforcastbox{
+    position: relative;
+    width: 12%;
+    left: 10px;
+    border: 3px double #2f2f2f;
+    padding: 10px 15px 10px 15px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 50px 20px -360px;
+}
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+
+
+}
+.collumns{
+
+}
+
+.collumn{
+    font-size: 14px;
+    line-height: 20px;
+    width: 17.5%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    transition: all .7s;
+}
+.collumn + .collumn { 
+  border-left: 1px solid #2f2f2f;
+}
+.collumn .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+
+
+}
+.collumn .headline.hl1{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+
+}
+
+.collumn .headline.hl2{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.collumn .headline.hl2:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl2:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl3{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl4:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl5{
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6{
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl6:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+.collumn .headline.hl7{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl8{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl9{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl10{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .citation{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 44px;
+    /*font-style: italic;*/
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 40px 0 40px 0;
+    font-feature-settings: "liga", "dlig";
+
+}
+.collumn .citation:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .citation:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .figure {
+	  margin: 0 0 20px;
+}
+.collumn .figcaption{
+	font-style: italic;
+	font-size: 12px;
+}
+.media {
+    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+/*________________________________________________________________________________________________________________________________*/
+/*MEDIAQUERIES*/
+@media only all and (max-width: 1300px) {
+    .weatherforcastbox{
+        display: none;
+    }
+
+}
+@media only all and (max-width: 1200px) {
+    .collumn{
+        width: 31%;
+    }
+
+}
+    @media only all and (max-width: 900px) {
+    .collumn{
+        width: 47%;
+    }
+
+}
+@media only all and (max-width: 600px) {
+    .collumn{
+        width: 100%;
+    }
+	.collumn + .collumn {
+				border-left: none;
+      	border-bottom: 1px solid #2f2f2f;
+	}
+    header{
+        max-width: 320px;
+        font-size: 60px;
+        line-height: 54px;
+        overflow: hidden;
+    }
+
+}</style>
+</body>
+</html>
