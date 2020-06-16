@@ -48,3 +48,10 @@ Copy and paste the fonts into /usr/share/fonts/truetype/ location
 
 ## Windows
 Copy and paste the fonts into Control panel Fonts application.
+
+## Websites
+copy the font url and develop your css file. sample code below
+<style>
+  @font-face {font-family: 'TMOTHNBI_Ship'; src: url('https://oss.neechalkaran.com/tamilfonts/1CDAC/TMOTHNBI_Ship.ttf');}
+</style>
+<span style="font-family: TMOTHNBI_Ship;">தமிழ்</span>
