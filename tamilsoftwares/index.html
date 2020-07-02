@@ -67,8 +67,9 @@ https://datatables.net/examples/advanced_init/dom_toolbar.html
       
       var url = new URL(location.href);
 var c = url.searchParams.get("q");
+      
 var table = $('#example').DataTable();
-    table.search( c ).draw();
+    if(c!=null)table.search( c ).draw();
       
       
 } );
