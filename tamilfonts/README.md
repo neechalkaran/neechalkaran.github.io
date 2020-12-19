@@ -34,8 +34,11 @@ Collections of Tamil Fonts
 ## Tamilri Chenthil fonts 
 தமிழர் ஆய்வுக்கூடம் சார்பாக செந்தில் குமார் வெளியிட்ட எழுத்துருக்கள். [source](https://www.facebook.com/photo.php?fbid=780187126146092&set=a.102926520538826&type=3) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=Tamilri_Chenetfont)
 
+## Yaldevi Fonts
+தமிழ், சிங்களம், ஆங்கிலம் என்ற மூன்று மொழிக்கு உருவான யாழ்தேவி எழுத்துருக்கள். [source](https://github.com/mooniak/yaldevi-fonts) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=Yaldevi)
+
 ## other-fonts
-   [Tamizha](https://github.com/thamizha/tamil-fonts/tree/master/fonts-installer/fontfiles) [SALRC](http://salrc.uchicago.edu/resources/fonts/available/tamil/) கிடைத்த இதர எழுத்துருக்கள் இங்கே உள்ளன.
+   [Tamizha](https://github.com/thamizha/tamil-fonts/tree/master/fonts-installer/fontfiles) [SALRC](http://salrc.uchicago.edu/resources/fonts/available/tamil/), [Aathi](https://github.com/Aathi/tamil-fonts), [Amma Font](https://github.com/thinkholic/amma-font) கிடைத்த இதர எழுத்துருக்கள் இங்கே உள்ளன.
    ஒவ்வொரு எழுத்துருவின் அதன் உரிமையைப் பின்பற்றிக் கொள்ளவும்.
 
 -----------------------------
