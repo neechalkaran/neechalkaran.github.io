@@ -38,7 +38,7 @@ Collections of Tamil Fonts
 தமிழ், சிங்களம், ஆங்கிலம் என்ற மூன்று மொழிக்கு உருவான யாழ்தேவி எழுத்துருக்கள். [source](https://github.com/mooniak/yaldevi-fonts) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=Yaldevi)
 
 ## other-fonts
-   [Tamizha](https://github.com/thamizha/tamil-fonts/tree/master/fonts-installer/fontfiles) [SALRC](http://salrc.uchicago.edu/resources/fonts/available/tamil/) [Aathi](https://github.com/Aathi/tamil-fonts) கிடைத்த இதர எழுத்துருக்கள் இங்கே உள்ளன.
+   [Tamizha](https://github.com/thamizha/tamil-fonts/tree/master/fonts-installer/fontfiles) [SALRC](http://salrc.uchicago.edu/resources/fonts/available/tamil/) [Aathi](https://github.com/Aathi/tamil-fonts) [Elcot](https://elcot.in/tamil-fonts-and-conversion) கிடைத்த இதர எழுத்துருக்கள் இங்கே உள்ளன.
    ஒவ்வொரு எழுத்துருவின் அதன் உரிமையைப் பின்பற்றிக் கொள்ளவும்.
 
 -----------------------------
