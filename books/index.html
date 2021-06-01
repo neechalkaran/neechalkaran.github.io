@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+</head>
+<body>
+  
+  <center><b>Tamil web directory</b><br/><small></small><br/><br/>
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Published</th>
+                <th>Keywords</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Published</th>
+                <th>Keywords</th>
+            </tr>
+        </tfoot>
+    </table>
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script>    
+    $(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax":"book_Data.json"
+    } );
+    $("div.toolbar").html('<b>Tamil Books directory</b>');
+} );
+  </script>
+</body>
+</html>
