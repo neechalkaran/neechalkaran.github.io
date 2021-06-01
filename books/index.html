@@ -18,6 +18,7 @@
 <body>
   
   <center><b>Tamil Ebooks directory</b><br/><small></small><br/><br/>
+<span style="width:75%">மின்னுருவாக்கம் செய்யப்பட்ட தமிழ் நூல்களின் தொகுப்பு. நன்றி:பொதுவகம், பொது நூலக இயக்ககம், தமிழிணைய மின்னூலகம், நூலக நிறுவனம், கூகிள் புக்ஸ்</spam>
 <table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -41,7 +42,11 @@
   <script>    
     $(document).ready(function() {
     $('#example').DataTable( {
-        "ajax":"book_Data.json"
+        "ajax":"book_Data.json",
+"lengthMenu": [ 50, 1000, 30000 ],
+      "order": [[ 1, 'asc' ]],
+      "language": {"paginate": {"next": "Next page"}},
+      "language": {"paginate": {"previous": "Previous page"}}
     } );
     $("div.toolbar").html('<b>Tamil EBooks directory</b>');
 } );
