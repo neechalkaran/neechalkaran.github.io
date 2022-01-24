@@ -50,7 +50,7 @@ Collections of All Tamil Fonts/
 
 ## Kadugu Fonts
 
-மறைந்த எழுத்துவாக்குநரும் நகைச்சுவை எழுத்தாளருமான கடுகு என்ற பி.எஸ் ரங்கநாதன் உருவாக்கிய எழு டிஸ்கி எழுத்துருக்கள் தற்போது ஒருங்குறியில் மாற்றப்பட்டுள்ளன. (மாற்றியவர்:நீச்சல்காரன்) [source](https://www.azhagi.com/freefonts.html) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=kadugu)
+மறைந்த எழுத்துருவாக்குநரும் நகைச்சுவை எழுத்தாளருமான கடுகு என்ற பி.எஸ் ரங்கநாதன் உருவாக்கிய ஏழு டிஸ்கி எழுத்துருக்கள் தற்போது ஒருங்குறியில் மாற்றப்பட்டுள்ளன. (மாற்றியவர்:நீச்சல்காரன்) [source](https://www.azhagi.com/freefonts.html) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=kadugu)
 
 ## other-fonts
 
