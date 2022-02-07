@@ -13,12 +13,14 @@
             <tr>
                 <th>ஆங்கிலம்</th>
                 <th>தமிழ்</th> 
+                <th>குறிப்பு</th> 
             </tr>
         </thead>
         <tfoot>
             <tr>
                 <th>ஆங்கிலம்</th>
                 <th>தமிழ்</th>
+                <th>குறிப்பு</th> 
             </tr>
         </tfoot>
     </table>
@@ -32,7 +34,7 @@
     $(document).ready(function() {
     $('#example').DataTable( {
         "ajax":"./data.json",        
-"lengthMenu": [ 50, 1000, 30000 ],
+"lengthMenu": [ 50, 100, 500, 1000 ],
       "order": [[ 1, 'asc' ]],
       "language": {"paginate": {"next": "Next page"}},
       "language": {"paginate": {"previous": "Previous page"}}
