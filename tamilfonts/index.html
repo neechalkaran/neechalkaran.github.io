@@ -41,7 +41,7 @@
 <a class="u-monospace Footer-formatsItem" href="https://github.com/neechalkaran/neechalkaran.github.io/tree/master/tamilfonts">All fonts & Licence at Github</a>
 </span></div></footer>  
 <script type="text/javascript">
-  
+  $(".custom").hide();
 var preview=[];  
  $(function(){  
     $.get( "./Fonts.txt", function( data ) {
@@ -112,6 +112,7 @@ if(m)message=m;
     $(".size").show();
   }
 else{
+  $(".custom").show();
    $.get( "./README.md", function( data ) {
 var converter = new showdown.Converter();
  $("#preview").html(converter.makeHtml(data));
