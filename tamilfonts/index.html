@@ -79,11 +79,13 @@ if(m)message=m;
      $(".size").show();
    }
   else if(look){
-    for(var i=0;i<preview.length;i++)
+    if(c){size=c;}else{size=preview.length;}
+    if(d){start=d;}else{start=0;}
+    for(var i=0;i<size;i++)
        {var j =parseInt(i)+parseInt(start);
        if(preview[j])
        {var name =preview[j].split("/")[1].split(".ttf")[0];
-       content+="<a href='?preview="+name+"'><span style='font-family:F"+j+";font-size:25px'>"+look+"</span></a> ";
+       content+="<a href='?preview="+name+"'><span style='font-family:F"+j+";font-size:35px'>"+look+"</span></a> ";
        }
        }
 
@@ -93,7 +95,7 @@ if(m)message=m;
        {var j =parseInt(i)+parseInt(start);
        if(preview[j])
        {var name =preview[j].split("/")[1].split(".ttf")[0];
-       content+="<br/><span style='font-family:F"+j+";font-size:25px'>"+message+"</span><a href='?preview="+name+"'>விரிவாக</a><a href='"+preview[j]+"'>("+name+"⇓)</a>";
+       content+="<br/><span style='padding: 4px 4px;font-family:F"+j+";font-size:25px'>"+message+"</span><a href='?preview="+name+"'>விரிவாக</a><a href='"+preview[j]+"'>("+name+"⇓)</a>";
        }
        }
   var n =parseInt(start)+parseInt(size);
