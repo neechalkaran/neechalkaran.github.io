@@ -99,7 +99,7 @@ if(m)message=m;
        {var j =parseInt(i)+parseInt(start);
        if(preview[j])
        {var name =preview[j].split("/")[1].split(".ttf")[0];
-       content+="<br/><span font-family:F"+j+";font-size:25px'>"+message+"</span><a href='?preview="+name+"'>விரிவாக</a><a href='"+preview[j]+"'>("+name+"⇓)</a>";
+       content+="<br/><span style='font-family:F"+j+";font-size:25px'>"+message+"</span><a href='?preview="+name+"'>விரிவாக</a><a href='"+preview[j]+"'>("+name+"⇓)</a>";
        }
        }
   var n =parseInt(start)+parseInt(size);
