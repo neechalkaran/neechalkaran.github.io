@@ -59,9 +59,13 @@ var url = new URL(location.href);
 var c = url.searchParams.get("size");
 var d = url.searchParams.get("index");
 var e = url.searchParams.get("preview");    
+var m = url.searchParams.get("message");    
+var look = url.searchParams.get("look");
+
 if(c)size=c;
 if(d)start=d;
 if(e)fname=e;
+if(m)message=m;
   if(start>limit){start=limit-size;}
   if(start<0){start=0;}
   var content="";
@@ -74,7 +78,17 @@ if(e)fname=e;
     $(".next").hide();
      $(".size").show();
    }
-  else if(d){
+  else if(look){
+    for(var i=0;i<preview.length;i++)
+       {var j =parseInt(i)+parseInt(start);
+       if(preview[j])
+       {var name =preview[j].split("/")[1].split(".ttf")[0];
+       content+="<a href='?preview="+name+"'><span style='font-family:F"+j+";font-size:25px'>"+look+"</span></a> ";
+       }
+       }
+
+  }
+   else if(d){
        for(var i=0;i<size;i++)
        {var j =parseInt(i)+parseInt(start);
        if(preview[j])
