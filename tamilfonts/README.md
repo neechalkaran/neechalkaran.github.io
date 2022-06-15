@@ -42,7 +42,7 @@ Collections of All Tamil Fonts/
 
 ## Tamilri Chenthil fonts
 
-தமிழர் ஆய்வுக்கூடம் சார்பாக செந்தில் குமார் வெளியிட்ட எழுத்துருக்கள். [source](https://www.facebook.com/photo.php?fbid=780187126146092&set=a.102926520538826&type=3) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=Tamilri_Chenetfont)
+தமிழர் ஆய்வுக்கூடம் சார்பாக செந்தில் குமார் வெளியிட்ட எழுத்துருக்கள். [source](https://www.facebook.com/photo.php?fbid=780187126146092&set=a.102926520538826&type=3) [Preview](https://oss.neechalkaran.com/tamilfonts/?preview=Tamilri_Chenet)
 
 ## Yaldevi Fonts
 
