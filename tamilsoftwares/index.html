@@ -24,9 +24,10 @@ https://datatables.net/examples/advanced_init/dom_toolbar.html
 4 type of input data
 -->
   <center><b>List of Tamil Softwares</b><br/><small></small><br/><br/>
-<span style="width:75%">கணித் தமிழ் முயற்சிகளின் தொகுப்பு. சிலவை நிரலாக இருக்கலாம், தரவிறக்கும் கருவியாக இருக்கலாம் அல்லது இணையச் செயலியாகவும் 
-    இருக்கலாம்.</spam>
+<span style="font-size: 9px;width:75%">கணித் தமிழ் முயற்சிகளின் தொகுப்பு. சிலவை நிரலாக இருக்கலாம், தரவிறக்கும் கருவியாக இருக்கலாம் அல்லது இணையச் செயலியாகவும் 
+    இருக்கலாம்.</span>
     <br/>
+    <div id="Highlight"></div>
 <table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -54,7 +55,17 @@ https://datatables.net/examples/advanced_init/dom_toolbar.html
   <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
   <script>    
+var category="தட்டச்சு,எழுத்துபெயர்ப்பு,எழுத்துருமாற்றி,உரை-ஒலி மாற்றி,ஒலி-உரை மாற்றி,எழுத்துணரி,பிழைதிருத்தி,மொழிமாற்றி,சொல்லாய்வு".split(",");
     $(document).ready(function() {
+for(var i in category)
+{
+var ediv = document.createElement('span');
+ediv.innerHTML = category[i];
+ediv.setAttribute("onclick", "$('#example_filter input').val('"+category[i]+"')");
+ediv.className="tag__item";
+document.getElementById('Highlight').appendChild(ediv);
+}
+
     $('#example').DataTable( {
         "ajax":"software.json",
         "lengthMenu": [ 25, 50, 75, 100 ],
@@ -96,6 +107,19 @@ var table = $('#example').DataTable();
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
+
+
+.tag__item {
+    display: inline-block;
+    color: #fff!important;
+    font-size: 1em;
+    background-color: #7eb4e2;
+    padding: 6px 23px 9px;
+    border-radius: 70em;
+    margin: 8px 6px 8px 0;
+    position: relative;
+}
+
     </style>
 </body>
 </html>
