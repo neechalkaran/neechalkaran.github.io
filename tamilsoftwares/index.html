@@ -61,7 +61,7 @@ for(var i in category)
 {
 var ediv = document.createElement('span');
 ediv.innerHTML = category[i];
-ediv.setAttribute("onclick", "$('#example_filter input').val('"+category[i]+"')");
+ediv.setAttribute("onclick", "$('#example_filter input').val('"+category[i]+"').trigger('keyup')");
 ediv.className="tag__item";
 document.getElementById('Highlight').appendChild(ediv);
 }
