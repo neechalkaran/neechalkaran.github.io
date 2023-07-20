@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ta" lang="ta" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+</head>
+<body>
+  <center><b>கலைச்சொற்களின் செந்தரம்</b><br/><br/><small>தொகுப்பு: கோட்டாளம். <a target="_blank" href="https://drive.google.com/file/d/11E40LHIXQkpO8dU0P7rlSGyShL7PXaDS/view?usp=sharing">ஆசிரியர் உரை</a></small><br/>
+  
+  
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>ஆங்கிலம்</th>
+                <th>தமிழ்</th> 
+                <th>குறிப்பு</th> 
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>ஆங்கிலம்</th>
+                <th>தமிழ்</th>
+                <th>குறிப்பு</th> 
+            </tr>
+        </tfoot>
+    </table>
+ 
+<footer class="Site-footer"><div class="Footer"><span class="Footer-formats">
+<a class="u-monospace Footer-formatsItem" href="https://github.com/neechalkaran/neechalkaran.github.io/tree/master/dictionary">Github</a>
+</span></div></footer>  
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script>    
+    $(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax":"./data.json",        
+"lengthMenu": [ 50, 100, 500, 1000 ],
+      "order": [[ 1, 'asc' ]],
+      "language": {"paginate": {"next": "Next page"}},
+      "language": {"paginate": {"previous": "Previous page"}}
+    } );
+    $("div.toolbar").html('<b>Tamil Web directory</b>');
+} );
+   
+  </script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      // Load the Google Transliteration API
+      google.load("elements", "1", {packages: "transliteration"});
+      function onLoad() {
+        var options = {
+            sourceLanguage:google.elements.transliteration.LanguageCode.ENGLISH,
+            destinationLanguage: [google.elements.transliteration.LanguageCode.TAMIL],
+            shortcutKey: 'ctrl+g',
+            transliterationEnabled: true
+        };
+        var control = new google.elements.transliteration.TransliterationControl(options);
+        var element = document.getElementsByTagName('input');
+        // Enable transliteration in the editable DIV with id
+        control.makeTransliteratable(element);
+      }
+      google.setOnLoadCallback(onLoad);
+    </script>
+  </body>
+</html>
