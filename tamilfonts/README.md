@@ -54,7 +54,7 @@ Collections of All Tamil Fonts/
 
 ## other-fonts
 
-[Tamizha](https://github.com/thamizha/tamil-fonts/tree/master/fonts-installer/fontfiles) [virtualvinodh](https://github.com/virtualvinodh/)[SALRC](http://salrc.uchicago.edu/resources/fonts/available/tamil/) [Aathi](https://github.com/Aathi/tamil-fonts) [Elcot](https://elcot.in/tamil-fonts-and-conversion) [lohit](https://fedorahosted.org/lohit/) [azhagi](https://www.azhagi.com/freefonts.html) [Yasin Djor](https://www.facebook.com/YasinDjor/posts/2340236659451211) கிடைத்த இதர எழுத்துருக்கள் இங்கே உள்ளன.
+[Tamizha](https://github.com/thamizha/tamil-fonts/tree/master/fonts-installer/fontfiles) [virtualvinodh](https://github.com/virtualvinodh/)[SALRC](http://salrc.uchicago.edu/resources/fonts/available/tamil/) [Aathi](https://github.com/Aathi/tamil-fonts) [Elcot](https://elcot.in/tamil-fonts-and-conversion) [lohit](https://fedorahosted.org/lohit/) [azhagi](https://www.azhagi.com/freefonts.html) [Yasin Djor](https://www.facebook.com/YasinDjor/posts/2340236659451211) [sgangaprasath](https://github.com/sgangaprasath/madurai) கிடைத்த இதர எழுத்துருக்கள் இங்கே உள்ளன.
 ஒவ்வொரு எழுத்துருவின் அதன் உரிமையைப் பின்பற்றிக் கொள்ளவும்.
 
 ---
