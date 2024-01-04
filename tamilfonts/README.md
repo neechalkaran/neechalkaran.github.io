@@ -69,6 +69,9 @@ Copy and paste the fonts into /usr/share/fonts/truetype/ location
 
 Copy and paste the fonts into Control panel Fonts application.
 
+## MAC
+In the Font Book app , choose File > Add Fonts to Current User. In the window that appears, double-click the font file
+
 ## Websites
 
 copy the font url and develop your css file. sample code below
