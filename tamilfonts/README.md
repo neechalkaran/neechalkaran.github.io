@@ -42,7 +42,7 @@ Collections of All Tamil Fonts/
 
 ## TAMILING
 
-வள்ளுவர்வள்ளலார்வட்டத்தின் இங்கர்சால் தயாரித்து வெளியிட்ட எழுத்துருக்கள். [source](https://valluvarvallalarvattam.com/tamilfonts/) [Preview1](https://oss.neechalkaran.com/tamilfonts/?preview=TAMILlNG) [Preview2](https://oss.neechalkaran.com/tamilfonts/?preview=Tamingo)
+வள்ளுவர்வள்ளலார்வட்டத்தின் இங்கர்சால் தயாரித்து பாண்டிச்சேரி கோபாலன் உருவாக்கிய எழுத்துருக்கள். [source](https://valluvarvallalarvattam.com/tamilfonts/) [Preview1](https://oss.neechalkaran.com/tamilfonts/?preview=TAMILlNG) [Preview2](https://oss.neechalkaran.com/tamilfonts/?preview=Tamingo)
 
 
 ## Tamilri Chenthil fonts
