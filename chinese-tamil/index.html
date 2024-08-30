@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 </head>
 <body>
-  <center><b>சீன தமிழ் அகராதி</b><br/><br/><br/>
+  <center><b>சீன தமிழ் அகராதி</b><br/><small>முனைவர் மெய். சித்ரா</small><br/><br/>
   
   
 <table id="example" class="display" cellspacing="0" width="100%">
@@ -29,8 +29,26 @@
     </table>
  
 <footer class="Site-footer"><div class="Footer"><span class="Footer-formats">
-<a class="u-monospace Footer-formatsItem" > © Dr. Mei. Chitra</a>
+<a class="u-monospace Footer-formatsItem"  id="myBtn" > © Dr. Mei. Chitra</a>
 </span></div></footer>  
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Editor: Dr. Mei. Chitra </h2>
+    </div>
+    <div class="modal-body">
+      <p>Independent researcher - currently doing research on ancient links between India and Korea, China, Sumeria especially Tamil Links.  Attended International conferences in Singapore, USA and Cambodia. Obtained Ph.D. in Information Systems from City University of Hong Kong while living there for 25 years.  Interested in writing and production of Dramas and radio programmes.  Published more than 25 books in various languages Tamil, English, Japanese.  Worked on Dictionaries in Chinese, Japanese and multiple Indian languages. Conducting workshops about Tamil Heritage.  Doing online presentations for various groups.</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Developer: Neechalkaran</h3>
+    </div>
+  </div>
+</div>
+
   <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
   <script>    
@@ -63,6 +81,33 @@
         control.makeTransliteratable(element);
       }
       google.setOnLoadCallback(onLoad);
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
     </script>
   </body>
 </html>
