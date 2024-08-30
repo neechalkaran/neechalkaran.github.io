@@ -30,7 +30,7 @@
     </table>
  
 <footer class="Site-footer"><div class="Footer"><span class="Footer-formats">
-<a class="u-monospace Footer-formatsItem"  id="myBtn" > © Dr. Mei. Chitra</a>
+<a class="u-monospace Footer-formatsItem"  style="cursor:pointer" id="myBtn" > © Dr. Mei. Chitra</a>
 </span></div></footer>  
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -65,24 +65,7 @@
 } );
    
   </script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
-      // Load the Google Transliteration API
-      google.load("elements", "1", {packages: "transliteration"});
-      function onLoad() {
-        var options = {
-            sourceLanguage:google.elements.transliteration.LanguageCode.ENGLISH,
-            destinationLanguage: [google.elements.transliteration.LanguageCode.TAMIL],
-            shortcutKey: 'ctrl+g',
-            transliterationEnabled: true
-        };
-        var control = new google.elements.transliteration.TransliterationControl(options);
-        var element = document.getElementsByTagName('input');
-        // Enable transliteration in the editable DIV with id
-        control.makeTransliteratable(element);
-      }
-      google.setOnLoadCallback(onLoad);
-
 
 // Get the modal
 var modal = document.getElementById("myModal");
