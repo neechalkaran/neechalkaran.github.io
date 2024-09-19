@@ -9,26 +9,18 @@
 <body>
   <center><b>சீன தமிழ் அகராதி</b><br/><small>முனைவர் மெய். சித்ரா</small><br/><br/>
   
-  
-<table id="example" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>சீனம்</th>
-                <th>பினியன்</th> 
-                <th>ஒலிபெயர்ப்பு</th> 
-                <th>பொருள்</th> 
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th>சீனம்</th>
-                <th>பினியன்</th> 
-                <th>ஒலிபெயர்ப்பு</th> 
-                <th>பொருள்</th> 
-            </tr>
-        </tfoot>
-    </table>
- 
+    <div class="search-box">
+      <input type="text" id="inputtext" onkeypress="handleKeyPress(event)" placeholder="Search...">
+      <button onclick="searchme()" type="submit">🔍</button>
+  </div>
+
+<div id="display" >
+  <div class="news-card">
+</div>
+
+</div>
+
+
 <footer class="Site-footer"><div class="Footer"><span class="Footer-formats">
 <a class="u-monospace Footer-formatsItem"  style="cursor:pointer" id="myBtn" > © Dr. Mei. Chitra</a>
 </span></div></footer>  
@@ -51,19 +43,76 @@
 </div>
 
   <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  
   <script>    
-    $(document).ready(function() {
-    $('#example').DataTable( {
-        "ajax":"./DB.json",        
-"lengthMenu": [ 50, 100],
-      "order": [[ 1, 'asc' ]],
-      "language": {"paginate": {"next": "Next page"}},
-      "language": {"paginate": {"previous": "Previous page"}}
-    } );
-    $("div.toolbar").html('<b>Chinese Tamil Dictionary</b>');
-} );
-   
+var DB=[];
+$.ajax({
+    type: "Get",
+    url: "DB.json",
+    dataType: "json",
+    success: function(data) {
+      DB=data["data"];    
+    $('.news-card').html("<span/><span/><p/><p/>");
+    
+    $('.news-card span').attr('class', 'news-title');
+    $('.news-card p').eq(0).attr('class', 'news-time');
+    $('.news-card p').eq(1).attr('class', 'news-content');
+    },
+    error: function(){
+
+    }
+});
+
+function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                searchme();
+            }
+        }
+function searchme()
+{
+  var limit=0;
+  var input=$("#inputtext").val().trim();
+  
+  $('#display').html("");
+    
+
+  for(var i in DB){
+    matched=false;
+    if(input.search(RegExp("[ஂ-௺]","gi"))>-1)
+  {
+    var words = DB[i][3].match(/[ஂ-௺]+/gi);
+    if(words)if(words.indexOf(input)>-1){matched=true;}
+  }
+
+    if(DB[i][0]+" "+DB[i][1].search(input)>-1)
+  {matched=true;}
+if(matched==true)
+{
+  console.log(DB[i])
+  $('#display').append("<hr/><div class='news-card'/>");
+    
+  $('.news-card').eq(limit).html("<span/>"+DB[i][0]+"</span><span>"+DB[i][1]+"</span><p class='news-time'>"+DB[i][2]+"</p><p class='news-content'>"+DB[i][3]+"</p>");
+  
+  $('.news-card span').attr('class', 'news-title');
+  //$('.news-card:nth-child('+limit+') p').eq(0).attr('class', 'news-time');
+  //$('.news-card:nth-child('+limit+') p').eq(1).attr('class', 'news-content');
+    
+    
+//$('.news-card:nth-child('+limit+') .news-time').html(DB[i][2]);
+//$('.news-card:nth-child('+limit+') .news-title').html(DB[i][0]);
+//$('.news-card:nth-child('+limit+') .news-title').eq(1).html(DB[i][1]);
+//$('.news-card:nth-child('+limit+') .news-content').eq(0).html(DB[i][3]);
+if(limit>4)return;
+limit++;
+}
+  
+  }
+  
+
+  
+}
+
+
   </script>
     <script type="text/javascript">
 
