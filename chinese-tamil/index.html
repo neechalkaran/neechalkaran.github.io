@@ -53,10 +53,7 @@ $.ajax({
     success: function(data) {
       DB=data["data"];    
     $('.news-card').html("<span/><span/><p/><p/>");
-    
-    $('.news-card span').attr('class', 'news-title');
-    $('.news-card p').eq(0).attr('class', 'news-time');
-    $('.news-card p').eq(1).attr('class', 'news-content');
+
     },
     error: function(){
 
@@ -83,25 +80,15 @@ function searchme()
     var words = DB[i][3].match(/[ஂ-௺]+/gi);
     if(words)if(words.indexOf(input)>-1){matched=true;}
   }
-
-    if(DB[i][0]+" "+DB[i][1].search(input)>-1)
+  else if((DB[i][0]+" "+DB[i][1]).indexOf(input)>-1)
   {matched=true;}
 if(matched==true)
 {
-  console.log(DB[i])
   $('#display').append("<hr/><div class='news-card'/>");
     
   $('.news-card').eq(limit).html("<span/>"+DB[i][0]+"</span><span>"+DB[i][1]+"</span><p class='news-time'>"+DB[i][2]+"</p><p class='news-content'>"+DB[i][3]+"</p>");
   
   $('.news-card span').attr('class', 'news-title');
-  //$('.news-card:nth-child('+limit+') p').eq(0).attr('class', 'news-time');
-  //$('.news-card:nth-child('+limit+') p').eq(1).attr('class', 'news-content');
-    
-    
-//$('.news-card:nth-child('+limit+') .news-time').html(DB[i][2]);
-//$('.news-card:nth-child('+limit+') .news-title').html(DB[i][0]);
-//$('.news-card:nth-child('+limit+') .news-title').eq(1).html(DB[i][1]);
-//$('.news-card:nth-child('+limit+') .news-content').eq(0).html(DB[i][3]);
 if(limit>4)return;
 limit++;
 }
