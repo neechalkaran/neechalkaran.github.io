@@ -7,10 +7,10 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <center><b>சீன தமிழ் அகராதி</b><br/><small>முனைவர் மெய். சித்ரா</small><br/><br/>
+  <center><b>சீன தமிழ் அகராதி</b><br/><small>தொகுப்பு: முனைவர் மெய். சித்ரா</small><br/><br/>
   
     <div class="search-box">
-      <input type="text" id="inputtext" onkeypress="handleKeyPress(event)" placeholder="Search...">
+      <input type="text" id="inputtext" onkeypress="handleKeyPress(event)" placeholder="Type in Tamil, English or Chinese">
       <button onclick="searchme()" type="submit">🔍</button>
   </div>
 
@@ -68,19 +68,29 @@ function handleKeyPress(event) {
 function searchme()
 {
   var limit=0;
-  var input=$("#inputtext").val().trim();
-  
+  var input=$("#inputtext").val().trim().toLowerCase();
+  if(input.length==0)return;
   $('#display').html("");
     
 
   for(var i in DB){
     matched=false;
-    if(input.search(RegExp("[ஂ-௺]","gi"))>-1)
+
+    if(input.search(" ")>-1)
+  {
+    if((DB[i].join(" ")).toLowerCase().indexOf(input)>-1)matched=true;
+  }    
+    else if(input.search(RegExp("[ஂ-௺]","gi"))>-1)
   {
     var words = DB[i][3].match(/[ஂ-௺]+/gi);
     if(words)if(words.indexOf(input)>-1){matched=true;}
   }
-  else if((DB[i][0]+" "+DB[i][1]).indexOf(input)>-1)
+  else if(input.search(RegExp("[A-Za-z]","gi"))>-1)
+  {    
+    var words = DB[i][4].toLowerCase().match(/[a-z]+/gi);
+    if(words)if(words.indexOf(input)>-1){matched=true;}
+  }
+  else if((DB[i][0]+" "+DB[i][1]+" "+DB[i][4]).toLowerCase().indexOf(input)>-1)
   {matched=true;}
 if(matched==true)
 {
