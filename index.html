@@ -11,20 +11,44 @@
 <small>List of Collections</small></div>
 <br/><br/><br/>
   
-    <center> <div style="width:75%;"><span style="width: 40%">   
-Collection of </span><span style="width: 40%;" class="tag__item"> 
+    <center> <div style="width:75%;"><span style="width: 40%;" class="tag__item"> 
 <a href="./tamilfonts">Tamil Fonts</a> 
 <a href="./tamilsoftwares">Tamil softwares & Tools</a>
     <a href="./books">Free Tamil ebooks</a>
     <a href="./kaninithamizh-books">Tamil Computing books</a>
     <a href="./webdirectory">Tamil web sites</a>
-    <a href="./dictionary/kottalam.html">Tamil Terminology</a>
-    <a href="./dictionary/aatchisol.html">Aatchisol Agarathi</a>
     <a href="./thesis_search">Tamil thesis Search</a>
     <a href="./works">Neechalkaran Tools</a>
+
+
+
+<br/>
+    <div class="bordered-div">
+<a href="./dictionary/kottalam.html">கோட்டாளம்</a>
+<a href="./dictionary/ramaki.html">இராம.கி</a>
+<a href="./dictionary/ponsaravanan.html">பொன் சரவணன்</a>
+<a href="./dictionary/aatchisol.html">ஆட்சிச் சொல் அகராதி</a>
+    </div>
+
 </span></div>
     </center>
   <style>
+        .bordered-div {
+            border: 2px solid black;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        .bordered-div::before {
+            content: "Tamil Terminology";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0 10px;
+        }
 div{
     font-size: 25px;
     font-weight: 700;
