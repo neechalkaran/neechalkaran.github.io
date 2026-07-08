@@ -1,4 +1,4 @@
-List of final projects from [DTEC Hackathon 2026](https://itadtec.org/hackathon-2026/).
+List of published projects from [DTEC Hackathon 2026](https://itadtec.org/hackathon-2026/).
 
 * https://livingsangamworld7999o7xiroqza4xdfa97l.streamlit.app/
 * https://sangam-ai-theta.vercel.app/
